@@ -1,3 +1,9 @@
+# # Challenge 1: Update the constructor to accept 
+# a dictionary (player) as an argument and
+# set the attributes using the dictionary 
+
+
+
 class Player:
     def __init__(self, name, age, position, team):
         self.name = name
@@ -5,6 +11,10 @@ class Player:
         self.position = position
         self.team = team
 
+
+
+# Complete challenge 2: Create 3 instances of 
+# the Player class using the given dictionaries
 kevin = {
     "name": "Kevin Durant", 
     "age":34, 
@@ -24,6 +34,10 @@ kyrie = {
 }
     
 
+# Complete challenge 3:
+# Populate a new list with Player instances from the list of player
+# Write your for loop that will populate the these 
+# Player objects into a new list called new_team
 players = [
     {
     "name": "Kevin Durant", 
@@ -53,26 +67,39 @@ players = [
     "team": "Philidelphia 76ers"
     },
 ]
+# 
 
-# print(len(players))
-
-
-
-# Create your Player instances here!
-# player_jason = ???
-
-
-kevin = {"name": "Kevin Durant", "age":34, "position": "small forward", "team":"Phoenix Suns"}
-# ... (class definition and large list of players here)
-new_team = []
-x = len(players)
-for x in  range (0,x):
-    # print(players[x])
-    new_team.append(players[x])
+# kevin = {"name": "Kevin Durant", "age":34, "position": "small forward", "team":"Phoenix Suns"}
+# new_team = []
+# # Write your for loop here to populate the new_team variable with Player objects.
+# # x = len(players)
+# # in this for loop line we are saying for the var x in the range of 0 to the 
+# # length of players let x track the amount of items in players 
+# for x in  range (0,len(players)):
+#     # we are printing the amount of items in the index from its start (0) to its end (len(players)
+#     # print(players[x])
+#     # so the loop will run through the numbers 0 to 
+#     # len(players) and print the items within each number of the index
+#     new_team.append(players[x])
     
 # print(f"{new_team}")
 
-print(new_team[0]['name'])
+
+
+
+@classmethod 
+def get_team(cls, team_list):
+    cls.players['name'][0]='sam'
+    return
+    # Ninja Bonus: Add an @class method called get_team(cls, team_list) that, 
+    # given a list of dictionaries 
+    # populates and returns a new list of Player objects
+    # i am struggling completing the ninja bonus, I  have created a class method that
+    #  takes a list and set it equal to a key value in my list changing the name in the index of 0 to sam but it will not set 
+
+
+get_team(players)
+# print(new_team[0]['name'])
 
 # Write your for loop here to populate the new_team variable with Player objects.
     
